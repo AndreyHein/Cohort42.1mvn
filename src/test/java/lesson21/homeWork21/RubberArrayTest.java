@@ -58,4 +58,12 @@ public class RubberArrayTest {
         Assertions.assertTrue(array.contains(10));
         Assertions.assertFalse(array.contains(17));
     }
+
+    @Test
+    public void testToString() {
+        for (int i = 0; i < 5; i++) {
+            array.add(i * 3);
+        }
+        Assertions.assertEquals("[0, 3, 6, 9, 12]",array.toString());
+    }
 }
