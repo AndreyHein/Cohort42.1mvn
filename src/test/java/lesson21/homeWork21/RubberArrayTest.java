@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 
 public class RubberArrayTest {
     private int[] actual;
-//    private int length;
     RubberArray array = new RubberArray();
 
     @Test
