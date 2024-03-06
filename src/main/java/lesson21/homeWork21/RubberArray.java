@@ -18,14 +18,14 @@ public class RubberArray {
     }
 
     public int[] extensionArray() {
-            // create new array
-            int[] newData = new int[(int) (data.length * EXTEND_INDEX)];
-            // move all items to new array
-            for (int i = 0; i < data.length; i++) {
-                newData[i] = data[i];
-            }
-            // change link to new array
-            data = newData;
+        // create new array
+        int[] newData = new int[(int) (data.length * EXTEND_INDEX)];
+        // move all items to new array
+        for (int i = 0; i < data.length; i++) {
+            newData[i] = data[i];
+        }
+        // change link to new array
+        data = newData;
         return newData;
     }
 
